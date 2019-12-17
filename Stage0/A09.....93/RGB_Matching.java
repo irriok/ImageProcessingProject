@@ -849,8 +849,8 @@ public class RGB_Matching implements PlugInFilter {
 				
 				for (int c = 0; c < K; c++) {
 					 int p = K - 1;
-					 ij.IJ.log("B mapped histogram");
-					while (p >= 0 && HistG[c] <= B_Sample[p]) {
+					// ij.IJ.log("B mapped histogram");
+					while (p >= 0 && HistB[c] <= B_Sample[p]) {
 						map_B[c] = p;
 						 p--;
 					};
